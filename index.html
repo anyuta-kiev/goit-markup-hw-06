@@ -46,7 +46,7 @@
     <section class="hero">
       <div class="overlay">
         <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
-        <button class="btn-studio">Заказать услугу</button>
+        <button class="btn-studio" data-modal-open>Заказать услугу</button>
       </div>
     </section>
 
@@ -325,6 +325,58 @@
       </div>
     </section>
 
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form class="modal-form" autocomplete="off">
+          <h2 class="form-title">
+            Оставьте свои данные, мы вам перезвоним
+          </h2>
+
+          <label class="form-group"><input type="text" name="name-text" class="form-input" placeholder=" ">
+            <svg class="input-icon">
+              <use href="./images/sprite.svg#person"></use>
+            </svg>
+            <span class="form-label">Имя</span>
+          </label>
+
+          <label class="form-group"><input type="tel" name="tel" class="form-input" placeholder=" "><svg
+              class="input-icon">
+              <use href="./images/sprite.svg#phone"></use>
+            </svg>
+            <span class="form-label">Телефон</span></label>
+
+          <label class="form-group"><input type="email" name="mail" class="form-input" placeholder=" "><svg
+              class="input-icon">
+              <use href="./images/sprite.svg#letter"></use>
+            </svg>
+            <span class="form-label">Почта</span>
+          </label>
+
+          <label class="comment">
+            <textarea name="comment" rows="10" class="textarea" placeholder=" ">
+            </textarea>
+            <span class="comment-label">Комментарий</span>
+          </label>
+
+          <label class="checkbox-label">
+            <input type="checkbox" name="chekbox" class="checkbox">
+            <span class="checkbox-icon"></span>
+            Соглашаюсь с рассылкой и принимаю
+            <a href="#"> Условия договора</a></label>
+
+          <div class="form-button">
+            <button type="submit" class="snd-btn">Отправить</button>
+          </div>
+
+          <button type="button" class="cls-btn" data-modal-close>
+            <svg class="cls-btn-icon" width="11" height="11">
+              <use href="./images/sprite.svg#close">
+              </use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
   </main>
 
   <footer>
@@ -391,6 +443,7 @@
       </div>
     </section>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
