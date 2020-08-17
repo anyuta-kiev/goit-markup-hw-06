@@ -639,6 +639,7 @@ footer {
 }
 
 .filter-text {
+  box-sizing: border-box;
   position: absolute;
   top: 0;
   left: 0;
@@ -647,6 +648,7 @@ footer {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
 
+  padding: 63px 24px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
@@ -657,7 +659,6 @@ footer {
 }
 
 .filter-text p {
-  padding: 63px 24px;
   margin: 0;
 }
 
